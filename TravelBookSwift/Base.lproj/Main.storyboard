@@ -17,32 +17,43 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" mapType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="B2K-Bk-Bgf">
-                                <rect key="frame" x="0.0" y="284" width="414" height="578"/>
+                                <rect key="frame" x="0.0" y="254" width="414" height="539"/>
                             </mapView>
-                            <textField opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="comment" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="vrg-7f-eSV">
-                                <rect key="frame" x="44" y="165" width="327" height="34"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits"/>
-                            </textField>
                             <textField opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="name" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="phS-FL-F6l">
                                 <rect key="frame" x="44" y="91" width="327" height="34"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
+                            <textField opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="comment" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="vrg-7f-eSV">
+                                <rect key="frame" x="44" y="165" width="327" height="34"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Bmk-5t-JaF">
+                                <rect key="frame" x="91" y="810" width="243" height="59"/>
+                                <state key="normal" title="SAVE"/>
+                                <connections>
+                                    <action selector="saveButtonClicked:" destination="BYZ-38-t0r" eventType="touchUpInside" id="X0L-Bs-SkW"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="B2K-Bk-Bgf" secondAttribute="trailing" id="4I6-Ch-Zl6"/>
                             <constraint firstItem="phS-FL-F6l" firstAttribute="leading" secondItem="vrg-7f-eSV" secondAttribute="leading" id="4T7-hZ-qrJ"/>
+                            <constraint firstItem="Bmk-5t-JaF" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="91" id="FJU-Oo-zGd"/>
                             <constraint firstItem="B2K-Bk-Bgf" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="LUA-yA-1Ea"/>
                             <constraint firstItem="phS-FL-F6l" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="47" id="Mj7-y6-97g"/>
                             <constraint firstItem="phS-FL-F6l" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="44" id="NOX-Ng-peQ"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="B2K-Bk-Bgf" secondAttribute="bottom" id="OVo-cl-9Xg"/>
+                            <constraint firstAttribute="bottomMargin" secondItem="Bmk-5t-JaF" secondAttribute="bottom" constant="-7" id="OBv-X3-lhK"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="B2K-Bk-Bgf" secondAttribute="bottom" constant="69" id="OVo-cl-9Xg"/>
+                            <constraint firstItem="Bmk-5t-JaF" firstAttribute="top" secondItem="B2K-Bk-Bgf" secondAttribute="bottom" constant="17" id="Xr0-Mw-6vQ"/>
                             <constraint firstItem="vrg-7f-eSV" firstAttribute="top" secondItem="phS-FL-F6l" secondAttribute="bottom" constant="40" id="ip5-xf-T93"/>
                             <constraint firstItem="vrg-7f-eSV" firstAttribute="centerX" secondItem="B2K-Bk-Bgf" secondAttribute="centerX" id="is2-Cm-iZU"/>
                             <constraint firstItem="phS-FL-F6l" firstAttribute="trailing" secondItem="vrg-7f-eSV" secondAttribute="trailing" id="otW-id-e65"/>
-                            <constraint firstItem="B2K-Bk-Bgf" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="240" id="sjr-hp-q8S"/>
+                            <constraint firstItem="B2K-Bk-Bgf" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="210" id="sjr-hp-q8S"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="Bmk-5t-JaF" secondAttribute="trailing" constant="80" id="w6t-Ph-Ntw"/>
                         </constraints>
                     </view>
                     <connections>
