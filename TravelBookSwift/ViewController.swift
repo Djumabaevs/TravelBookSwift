@@ -39,7 +39,15 @@ class ViewController: UIViewController, MKMapViewDelegate, CLLocationManagerDele
             
             let touchedPoint = gestureRecognizer.location(in: self.mapView)
             
+            let touchedCoordinates = self.mapView.convert(touchedPoint, toCoordinateFrom: self.mapView)
             
+            let annotation = MKPointAnnotation()
+            annotation.coordinate = touchedCoordinates
+            
+            annotation.title = "New BD Annotation"
+            annotation.subtitle = "Travel Book"
+            
+            self.mapView.addAnnotation(annotation)
         }
         
     }
