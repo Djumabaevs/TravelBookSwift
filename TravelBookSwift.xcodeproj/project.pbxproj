@@ -16,6 +16,7 @@
 		347F152526A1F1C20022C24A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 347F152326A1F1C20022C24A /* LaunchScreen.storyboard */; };
 		347F153026A1F1C20022C24A /* TravelBookSwiftTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 347F152F26A1F1C20022C24A /* TravelBookSwiftTests.swift */; };
 		347F153B26A1F1C20022C24A /* TravelBookSwiftUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 347F153A26A1F1C20022C24A /* TravelBookSwiftUITests.swift */; };
+		34C3B38E26A7310C00E12CC9 /* ListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34C3B38D26A7310C00E12CC9 /* ListViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +52,7 @@
 		347F153626A1F1C20022C24A /* TravelBookSwiftUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TravelBookSwiftUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		347F153A26A1F1C20022C24A /* TravelBookSwiftUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TravelBookSwiftUITests.swift; sourceTree = "<group>"; };
 		347F153C26A1F1C20022C24A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		34C3B38D26A7310C00E12CC9 /* ListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -104,6 +106,7 @@
 				347F151526A1F1C00022C24A /* AppDelegate.swift */,
 				347F151726A1F1C00022C24A /* SceneDelegate.swift */,
 				347F151926A1F1C00022C24A /* ViewController.swift */,
+				34C3B38D26A7310C00E12CC9 /* ListViewController.swift */,
 				347F151B26A1F1C00022C24A /* Main.storyboard */,
 				347F152126A1F1C20022C24A /* Assets.xcassets */,
 				347F152326A1F1C20022C24A /* LaunchScreen.storyboard */,
@@ -264,6 +267,7 @@
 				347F151A26A1F1C00022C24A /* ViewController.swift in Sources */,
 				347F151626A1F1C00022C24A /* AppDelegate.swift in Sources */,
 				347F152026A1F1C00022C24A /* TravelBookSwift.xcdatamodeld in Sources */,
+				34C3B38E26A7310C00E12CC9 /* ListViewController.swift in Sources */,
 				347F151826A1F1C00022C24A /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
