@@ -44,6 +44,10 @@ class ViewController: UIViewController, MKMapViewDelegate, CLLocationManagerDele
         if selectedTitle != "" {
             //CoreData
             
+            let stringUUID = selectedTitleID!.uuidString
+            print(stringUUID)
+            
+            
         } else {
             //Add new data
         }
