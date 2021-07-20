@@ -51,8 +51,11 @@ class ViewController: UIViewController, MKMapViewDelegate, CLLocationManagerDele
             let context = appDelegate.persistentContainer.viewContext
             
             let fetchRequest = NSFetchRequest<NSFetchRequestResult>(entityName: "Places")
-            
+            let idString = selectedTitleID!.uuidString
+            fetchRequest.predicate = NSPredicate(format: "id = %@", idString)
             fetchRequest.returnsObjectsAsFaults = false
+            
+            
             
             
         } else {
