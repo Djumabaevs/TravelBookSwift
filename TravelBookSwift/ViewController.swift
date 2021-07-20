@@ -43,9 +43,16 @@ class ViewController: UIViewController, MKMapViewDelegate, CLLocationManagerDele
         
         if selectedTitle != "" {
             //CoreData
+//
+//            let stringUUID = selectedTitleID!.uuidString
+//            print(stringUUID)
             
-            let stringUUID = selectedTitleID!.uuidString
-            print(stringUUID)
+            let appDelegate = UIApplication.shared.delegate as! AppDelegate
+            let context = appDelegate.persistentContainer.viewContext
+            
+            let fetchRequest = NSFetchRequest<NSFetchRequestResult>(entityName: "Places")
+            
+            fetchRequest.returnsObjectsAsFaults = false
             
             
         } else {
