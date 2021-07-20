@@ -21,6 +21,9 @@ class ViewController: UIViewController, MKMapViewDelegate, CLLocationManagerDele
     
     var locationManager = CLLocationManager()
     
+    var selectedTitle = ""
+    var selectedTitleID : UUID?
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         
@@ -36,6 +39,14 @@ class ViewController: UIViewController, MKMapViewDelegate, CLLocationManagerDele
         gestureRecognizer.minimumPressDuration = 3
         
         mapView.addGestureRecognizer(gestureRecognizer)
+        
+        
+        if selectedTitle != "" {
+            //CoreData
+            
+        } else {
+            //Add new data
+        }
         
         
     }
