@@ -24,6 +24,12 @@ class ViewController: UIViewController, MKMapViewDelegate, CLLocationManagerDele
     var selectedTitle = ""
     var selectedTitleID : UUID?
     
+    var annotationTitle = ""
+    var annotationSubtitle = ""
+    var annotationLatitude = Double()
+    var annotationLongitude = Double()
+    
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         
@@ -63,19 +69,19 @@ class ViewController: UIViewController, MKMapViewDelegate, CLLocationManagerDele
                     for result in results as! [NSManagedObject] {
                         
                         if let title = result.value(forKey: "title") as? String {
-                            
+                            annotationTitle = title
                         }
                         
                         if let subtitle = result.value(forKey: "subtitle") as? String {
-                            
+                            annotationSubtitle = subtitle
                         }
                         
                         if let latitude = result.value(forKey: "latitude") as? Double {
-                            
+                            annotationLatitude = latitude
                         }
                         
                         if let longitude = result.value(forKey: "longitude") as? Double {
-                            
+                            annotationLongitude = longitude
                         }
                     }
                 }
