@@ -88,6 +88,11 @@ class ViewController: UIViewController, MKMapViewDelegate, CLLocationManagerDele
                                         latitude: annotationLatitude, longitude: annotationLongitude
                                         )
                                         annotation.coordinate = coordinate
+                                        
+                                        mapView.addAnnotation(annotation)
+                                        
+                                        nameText.text = annotationTitle
+                                        commentText.text = annotationSubtitle
                                     }
                                 }
                             }
