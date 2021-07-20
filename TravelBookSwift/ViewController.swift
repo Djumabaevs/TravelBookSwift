@@ -55,7 +55,18 @@ class ViewController: UIViewController, MKMapViewDelegate, CLLocationManagerDele
             fetchRequest.predicate = NSPredicate(format: "id = %@", idString)
             fetchRequest.returnsObjectsAsFaults = false
             
-            
+            do {
+                let results = try context.fetch(fetchRequest)
+                
+                if results.count > 0 {
+                    
+                    for result in results as! [NSManagedObject] {
+                        
+                    }
+                }
+            } catch {
+                print("error")
+            }
             
             
         } else {
