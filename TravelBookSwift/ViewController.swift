@@ -62,6 +62,21 @@ class ViewController: UIViewController, MKMapViewDelegate, CLLocationManagerDele
                     
                     for result in results as! [NSManagedObject] {
                         
+                        if let title = result.value(forKey: "title") as? String {
+                            
+                        }
+                        
+                        if let subtitle = result.value(forKey: "subtitle") as? String {
+                            
+                        }
+                        
+                        if let latitude = result.value(forKey: "latitude") as? Double {
+                            
+                        }
+                        
+                        if let longitude = result.value(forKey: "longitude") as? Double {
+                            
+                        }
                     }
                 }
             } catch {
