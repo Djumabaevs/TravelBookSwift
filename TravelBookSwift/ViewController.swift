@@ -190,11 +190,26 @@ class ViewController: UIViewController, MKMapViewDelegate, CLLocationManagerDele
         
         if selectedTitle != "" {
             
-            var requestLocation = CLLocation(latitude: annotationLatitude, longitude: annotationLongitude)
+            let requestLocation = CLLocation(latitude: annotationLatitude, longitude: annotationLongitude)
             
             CLGeocoder().reverseGeocodeLocation(requestLocation) { (placemarks, error) in
                 //closure
                 
+                if let placemark = placemarks {
+                    if placemark.count > 0 {
+                        
+                        let newPlacemark = MKPlacemark(placemark: placemark[0])
+                        
+                        let item = MKMapItem(placemark: newPlacemark)
+                        
+                        item.name = self.annotationTitle
+                        
+                        let lauchOptions = [MKLaunchOptionsDirectionsModeKey:
+                        MKLaunchOptionsDirectionsModeDriving]
+                        
+                        item.openInMaps(launchOptions: lauchOptions)
+                    }
+                }
             }
         }
     }
