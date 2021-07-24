@@ -33,6 +33,11 @@ class ViewController: UIViewController, MKMapViewDelegate, CLLocationManagerDele
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        
+        let userInterfaceStyle = traitCollection.userInterfaceStyle
+        
+        
+        
         mapView.delegate = self
         
         locationManager.delegate = self
