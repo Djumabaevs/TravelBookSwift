@@ -42,6 +42,10 @@ class ViewController: UIViewController, MKMapViewDelegate, CLLocationManagerDele
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        
+        overrideUserInterfaceStyle = .light
+        
+        
         mapView.delegate = self
         
         locationManager.delegate = self
