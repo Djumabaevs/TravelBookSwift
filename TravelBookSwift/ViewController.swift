@@ -30,13 +30,17 @@ class ViewController: UIViewController, MKMapViewDelegate, CLLocationManagerDele
     var annotationLongitude = Double()
     
     
+    override func traitCollectionDidChange(_ previousTraitCollection: UITraitCollection?) {
+        let userInterfaceStyle = traitCollection.userInterfaceStyle
+        if userInterfaceStyle == .dark {
+            nameText.tintColor = UIColor.white
+        } else {
+            nameText.tintColor = UIColor.blue
+        }
+    }
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-        
-        
-        let userInterfaceStyle = traitCollection.userInterfaceStyle
-        
-        
         
         mapView.delegate = self
         
