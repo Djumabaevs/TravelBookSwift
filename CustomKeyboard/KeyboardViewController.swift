@@ -20,6 +20,13 @@ class KeyboardViewController: UIInputViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        
+        let customButton = UIButton(type: UIButton.ButtonType.system)
+        
+        
+        
+        
+        
         // Perform custom UI setup here
         self.nextKeyboardButton = UIButton(type: .system)
         
