@@ -22,8 +22,8 @@ class KeyboardViewController: UIInputViewController {
         
         
         let customButton = UIButton(type: UIButton.ButtonType.system)
-        customButton.frame  =CGRect(x: 150, y: 50, width: 100, height: 100)
-        
+        customButton.frame  = CGRect(x: 150, y: 50, width: 100, height: 100)
+        customButton.setBackgroundImage(UIImage(named: "island.jpg"), for: UIControl.State.normal)
         
         
         
