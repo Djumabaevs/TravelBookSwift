@@ -22,9 +22,10 @@ class KeyboardViewController: UIInputViewController {
         
         
         let customButton = UIButton(type: UIButton.ButtonType.system)
-        customButton.frame  = CGRect(x: 150, y: 50, width: 100, height: 100)
+        customButton.frame  = CGRect(x: 150, y: 50, width: 200, height: 200)
         customButton.setBackgroundImage(UIImage(named: "island.jpg"), for: UIControl.State.normal)
-        customButton.addTarget(self, action: #selector(), for: UIControl.Event.touchUpInside)
+        customButton.addTarget(self, action: #selector(customTapped), for: UIControl.Event.touchUpInside)
+        view.addSubview(customButton)
         
         
         
@@ -42,6 +43,10 @@ class KeyboardViewController: UIInputViewController {
         
         self.nextKeyboardButton.leftAnchor.constraint(equalTo: self.view.leftAnchor).isActive = true
         self.nextKeyboardButton.bottomAnchor.constraint(equalTo: self.view.bottomAnchor).isActive = true
+    }
+    
+    @objc func customTapped() {
+        let textProxy = textDocumentProxy as UITextDocumentProxy
     }
     
     override func viewWillLayoutSubviews() {
