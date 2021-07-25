@@ -17,6 +17,8 @@
 		347F153026A1F1C20022C24A /* TravelBookSwiftTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 347F152F26A1F1C20022C24A /* TravelBookSwiftTests.swift */; };
 		347F153B26A1F1C20022C24A /* TravelBookSwiftUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 347F153A26A1F1C20022C24A /* TravelBookSwiftUITests.swift */; };
 		34C3B38E26A7310C00E12CC9 /* ListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34C3B38D26A7310C00E12CC9 /* ListViewController.swift */; };
+		34C3B39626AD066C00E12CC9 /* KeyboardViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34C3B39526AD066C00E12CC9 /* KeyboardViewController.swift */; };
+		34C3B39A26AD066C00E12CC9 /* CustomKeyboard.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 34C3B39326AD066C00E12CC9 /* CustomKeyboard.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -34,7 +36,28 @@
 			remoteGlobalIDString = 347F151126A1F1C00022C24A;
 			remoteInfo = TravelBookSwift;
 		};
+		34C3B39826AD066C00E12CC9 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 347F150A26A1F1C00022C24A /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 34C3B39226AD066C00E12CC9;
+			remoteInfo = CustomKeyboard;
+		};
 /* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		34C3B39E26AD066C00E12CC9 /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				34C3B39A26AD066C00E12CC9 /* CustomKeyboard.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		347F151226A1F1C00022C24A /* TravelBookSwift.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TravelBookSwift.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -53,6 +76,9 @@
 		347F153A26A1F1C20022C24A /* TravelBookSwiftUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TravelBookSwiftUITests.swift; sourceTree = "<group>"; };
 		347F153C26A1F1C20022C24A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		34C3B38D26A7310C00E12CC9 /* ListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListViewController.swift; sourceTree = "<group>"; };
+		34C3B39326AD066C00E12CC9 /* CustomKeyboard.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = CustomKeyboard.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+		34C3B39526AD066C00E12CC9 /* KeyboardViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeyboardViewController.swift; sourceTree = "<group>"; };
+		34C3B39726AD066C00E12CC9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -77,6 +103,13 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		34C3B39026AD066C00E12CC9 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
@@ -86,6 +119,7 @@
 				347F151426A1F1C00022C24A /* TravelBookSwift */,
 				347F152E26A1F1C20022C24A /* TravelBookSwiftTests */,
 				347F153926A1F1C20022C24A /* TravelBookSwiftUITests */,
+				34C3B39426AD066C00E12CC9 /* CustomKeyboard */,
 				347F151326A1F1C00022C24A /* Products */,
 			);
 			sourceTree = "<group>";
@@ -96,6 +130,7 @@
 				347F151226A1F1C00022C24A /* TravelBookSwift.app */,
 				347F152B26A1F1C20022C24A /* TravelBookSwiftTests.xctest */,
 				347F153626A1F1C20022C24A /* TravelBookSwiftUITests.xctest */,
+				34C3B39326AD066C00E12CC9 /* CustomKeyboard.appex */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -134,6 +169,15 @@
 			path = TravelBookSwiftUITests;
 			sourceTree = "<group>";
 		};
+		34C3B39426AD066C00E12CC9 /* CustomKeyboard */ = {
+			isa = PBXGroup;
+			children = (
+				34C3B39526AD066C00E12CC9 /* KeyboardViewController.swift */,
+				34C3B39726AD066C00E12CC9 /* Info.plist */,
+			);
+			path = CustomKeyboard;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -144,10 +188,12 @@
 				347F150E26A1F1C00022C24A /* Sources */,
 				347F150F26A1F1C00022C24A /* Frameworks */,
 				347F151026A1F1C00022C24A /* Resources */,
+				34C3B39E26AD066C00E12CC9 /* Embed App Extensions */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				34C3B39926AD066C00E12CC9 /* PBXTargetDependency */,
 			);
 			name = TravelBookSwift;
 			productName = TravelBookSwift;
@@ -190,6 +236,23 @@
 			productReference = 347F153626A1F1C20022C24A /* TravelBookSwiftUITests.xctest */;
 			productType = "com.apple.product-type.bundle.ui-testing";
 		};
+		34C3B39226AD066C00E12CC9 /* CustomKeyboard */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 34C3B39B26AD066C00E12CC9 /* Build configuration list for PBXNativeTarget "CustomKeyboard" */;
+			buildPhases = (
+				34C3B38F26AD066C00E12CC9 /* Sources */,
+				34C3B39026AD066C00E12CC9 /* Frameworks */,
+				34C3B39126AD066C00E12CC9 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = CustomKeyboard;
+			productName = CustomKeyboard;
+			productReference = 34C3B39326AD066C00E12CC9 /* CustomKeyboard.appex */;
+			productType = "com.apple.product-type.app-extension";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -210,6 +273,9 @@
 						CreatedOnToolsVersion = 12.5;
 						TestTargetID = 347F151126A1F1C00022C24A;
 					};
+					34C3B39226AD066C00E12CC9 = {
+						CreatedOnToolsVersion = 12.5.1;
+					};
 				};
 			};
 			buildConfigurationList = 347F150D26A1F1C00022C24A /* Build configuration list for PBXProject "TravelBookSwift" */;
@@ -228,6 +294,7 @@
 				347F151126A1F1C00022C24A /* TravelBookSwift */,
 				347F152A26A1F1C20022C24A /* TravelBookSwiftTests */,
 				347F153526A1F1C20022C24A /* TravelBookSwiftUITests */,
+				34C3B39226AD066C00E12CC9 /* CustomKeyboard */,
 			);
 		};
 /* End PBXProject section */
@@ -251,6 +318,13 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 		347F153426A1F1C20022C24A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		34C3B39126AD066C00E12CC9 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -288,6 +362,14 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		34C3B38F26AD066C00E12CC9 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				34C3B39626AD066C00E12CC9 /* KeyboardViewController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
@@ -300,6 +382,11 @@
 			isa = PBXTargetDependency;
 			target = 347F151126A1F1C00022C24A /* TravelBookSwift */;
 			targetProxy = 347F153726A1F1C20022C24A /* PBXContainerItemProxy */;
+		};
+		34C3B39926AD066C00E12CC9 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 34C3B39226AD066C00E12CC9 /* CustomKeyboard */;
+			targetProxy = 34C3B39826AD066C00E12CC9 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -442,6 +529,7 @@
 		347F154026A1F1C20022C24A /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
@@ -460,6 +548,7 @@
 		347F154126A1F1C20022C24A /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
@@ -555,6 +644,42 @@
 			};
 			name = Release;
 		};
+		34C3B39C26AD066C00E12CC9 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = CustomKeyboard/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = BakytDzhumabaev.TravelBookSwift.CustomKeyboard;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		34C3B39D26AD066C00E12CC9 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = CustomKeyboard/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = BakytDzhumabaev.TravelBookSwift.CustomKeyboard;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -590,6 +715,15 @@
 			buildConfigurations = (
 				347F154626A1F1C20022C24A /* Debug */,
 				347F154726A1F1C20022C24A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		34C3B39B26AD066C00E12CC9 /* Build configuration list for PBXNativeTarget "CustomKeyboard" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				34C3B39C26AD066C00E12CC9 /* Debug */,
+				34C3B39D26AD066C00E12CC9 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
